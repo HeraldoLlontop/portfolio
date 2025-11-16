@@ -1,0 +1,88 @@
+---
+import IconAstro from "./IconAstro.astro";
+import IconNextjs from "./IconNextjs.astro";
+import IconTailwind from "./IconTailwind.astro";
+import IconTypeScript from "./IconTypeScript.astro";
+import IconHtml from "./IconHtml.astro";
+import IconCss from "./IconCss.astro";
+import IconReact from "./IconReact.astro";
+import IconGit from "./IconGit.astro";
+import IconGitHub from "./IconGtiHub.astro";
+import IconStripe from "./IconStripe.astro";
+import IconJavaScript from "./IconJavaScritp.astro";
+import IconPhp from "./IconPhp.astro";
+import IconJava from "./IconJava.astro";
+import IconLaravel from "./IconLaravel.astro";
+import IconSpringBoot from "./IconSpringBoot.astro";
+import IconAngular from "./IconAngular.astro";
+import IconBootstrap from "./IconBootstrap.astro";
+import IconPostgresql from "./IconPostgresql.astro";
+import IconMysql from "./IconMysql.astro";
+import IconSqlServer from "./IconSqlServer.astro";
+import IconBitbucket from "./IconBitbucket.astro";
+import IconDbeaver from "./IconDbeaver.astro";
+import IconNginx from "./IconNginx.astro";
+import IconWordpress from "./IconWordpress.astro";
+import IconDigitalOcean from "./IconDigitalOcean.astro";
+import IconBash from "./IconBash.astro";
+import IconJwt from "./IconJwt.astro";
+import IconKotlin from "./IconKotlin.astro";
+import IconVue from "./IconVue.astro";
+import IconDocker from "./IconDocker.astro";
+import IconPostman from "./IconPostman.astro";
+// Iconos usados en proyectos (mantener para compatibilidad)
+import IconRedux from "./IconRedux.astro";
+import IconReactQuery from "./IconReactQuery.astro";
+import IconZustand from "./IconZustand.astro";
+import IconShadcn from "./IconShadcn.astro";
+import IconMongodb from "./IconMongodb.astro";
+import IconNodeJs from "./IconNodeJs.astro";
+
+export const ICONS = {
+  html: IconHtml,
+  css: IconCss,
+  javaScript: IconJavaScript,
+  react: IconReact,
+  astro: IconAstro,
+  nextjs: IconNextjs,
+  tailwind: IconTailwind,
+  typeScript: IconTypeScript,
+  git: IconGit,
+  github: IconGitHub,
+  stripe: IconStripe,
+  php: IconPhp,
+  java: IconJava,
+  laravel: IconLaravel,
+  springBoot: IconSpringBoot,
+  angular: IconAngular,
+  bootstrap: IconBootstrap,
+  postgresql: IconPostgresql,
+  mysql: IconMysql,
+  sqlServer: IconSqlServer,
+  bitbucket: IconBitbucket,
+  dbeaver: IconDbeaver,
+  nginx: IconNginx,
+  wordpress: IconWordpress,
+  digitalOcean: IconDigitalOcean,
+  bash: IconBash,
+  jwt: IconJwt,
+  kotlin: IconKotlin,
+  vue: IconVue,
+  docker: IconDocker,
+  postman: IconPostman,
+  // Iconos usados en proyectos (mantener para compatibilidad)
+  redux: IconRedux,
+  reactQuery: IconReactQuery,
+  zustand: IconZustand,
+  shadcn: IconShadcn,
+  mongodb: IconMongodb,
+  nodejs: IconNodeJs,
+  // add new icons here <--
+  // Make sure that when calling the icon the key is the same
+  // "optional" in the IconKeys const file adds the icon key for when you call IconKeys.nameIcon
+};
+
+export function getIconComponent(iconName: string) {
+  return ICONS[iconName] || null;
+}
+---
